@@ -2,6 +2,7 @@
 *.user
 /*-debug/
 /*-release/
+*.sh
 
 # Object files
 *.o
