@@ -1,6 +1,6 @@
 #Qt project
 *.user
-/build*
+/*/build*
 
 # Object files
 *.o
