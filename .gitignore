@@ -1,3 +1,7 @@
+#Qt project
+*.user
+/build*
+
 # Object files
 *.o
 *.ko
