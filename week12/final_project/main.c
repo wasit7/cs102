@@ -56,37 +56,37 @@ int main(void)
 
 //Manaully enter the data
 
-//    subject * cur;
-//    char _course_id[10];
-//    char _name[100];
-//    int _credit;
-//    cur=&root;
-//    printf("Please enter\n");
-//    while(1){
-//        printf("id credit: ");
-//        scanf("%s%d",_course_id,&_credit);
-//        printf("course name:");
-//        scanf("%s",_name);
-//        strcpy(cur->course_id,_course_id);
-//        cur->credit=_credit;
-//        strcpy(cur->name,_name);
-//        if(_course_id[0]=='-') {
-//            cur->next = 0;
-//            break;
-//        }
-//        cur->next = (subject*) malloc(sizeof(subject));
-//        cur=cur->next;
-//    }
+    subject * cur;
+    char _course_id[10];
+    char _name[100];
+    int _credit;
+    cur=&root;
+    printf("Please enter\n");
+    while(1){
+        printf("id credit: ");
+        scanf("%s%d",_course_id,&_credit);
+        printf("course name:");
+        scanf("%s",_name);
+        strcpy(cur->course_id,_course_id);
+        cur->credit=_credit;
+        strcpy(cur->name,_name);
+        if(_course_id[0]=='-') {
+            cur->next = 0;
+            break;
+        }
+        cur->next = (subject*) malloc(sizeof(subject));
+        cur=cur->next;
+    }
 
 //show the data
 
-//    show(&root);
+    show(&root);
 
 //save file
 
-//    pfile=fopen("../subjects.txt","w");
-//    write(&root,pfile);
-//    fclose(pfile);
+    pfile=fopen("../subjects.txt","w");
+    write(&root,pfile);
+    fclose(pfile);
 
 //read file
     printf("loading file...\n");
