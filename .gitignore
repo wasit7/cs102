@@ -2,6 +2,8 @@
 *.user
 /*-debug/
 /*-release/
+/*-Debug/
+/*-Delease/
 *.sh
 
 # Object files
