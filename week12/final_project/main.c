@@ -16,12 +16,14 @@ void show(subject *p){
         return;    
     show( p->next );
 }
+
 void write(subject *p,FILE *pfile){
     fprintf(pfile,"%s %d %s\n",p->course_id,p->credit,p->name);
     if(p->next==0)
         return;    
     write(p->next,pfile);
 }
+
 void read(subject *root,FILE *pfile){
     subject * cur;
 
