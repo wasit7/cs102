@@ -1,4 +1,4 @@
-cs102
-=====
+# cs102
 
-c programming
+
+Basic C programming
